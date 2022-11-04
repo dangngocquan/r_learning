@@ -18,9 +18,13 @@
 # **2. Variables**
 Example
 
-```var_x <- 5```
+```
+var_x <- 5
+```
 
-```str <- "Hello"```
+```
+str <- "Hello"
+```
 
 <br>
 
@@ -30,7 +34,7 @@ Example
 | ---- | ------- |
 | character | ```fruit <- "Apple"``` |
 | integer | ``` number <- 104L ``` |
-| numeric | ``` weight <- 45.5 <br> height <- 160 ``` |
+| numeric | ``` weight <- 45.5``` <br> ```height <- 160 ``` |
 | complex | ``` value <- 10 + 4i ``` |
 | logical | ``` bool <- TRUE ``` |
 
