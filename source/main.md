@@ -44,6 +44,6 @@ str <- "Hello"
 
 | Data structure | Example | Element access | Output |
 | -------------- | ------- | -------------- | ------ |
-| vector | <code> vector1 <- c(1, 2, 5, 4, 3) </code> | <code> vector1[3]</code> | `[1] 5` |
-| list | <code> list1 <- list(<br>&emsp; a <- c(1, 2, 3), <br>&emsp; b <- c("Apple", "Orange"), <br> &emsp; c <- c(TRUE, FALSE)<br> )</code> |
+| vector | ```vector1 <- c(1, 2, 5, 4, 3)``` | ```vector1[3]``` | ```[1] 5``` |
+| list | ```list1 <- list(```<br>&emsp; ```a = c(1, 2, 3),``` <br>&emsp; ```b = c("Apple", "Orange"),``` <br> &emsp; ```c = c(TRUE, FALSE)```<br> ```)``` | ```list1$a``` <br> ```list1[[2]]``` | ```[1] 1 2 3``` <br> ```[1] "Apple"  "Orange"``` |
 | factor | 
