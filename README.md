@@ -4,3 +4,4 @@
 2. ***[Variables in R](variables.md)***
 3. ***[Data types in R](data_types.md)***
 4. ***[Data structures in R](data_structures.md)***
+5. ***[Functions in R](functions.md)***
