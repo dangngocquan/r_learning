@@ -15,58 +15,58 @@
 
 ### **Declaration**
 
-***Code***
+***Code & Result***
 ```
 vector1 <- c(1, 2, 3, 4, 5)
 ```
-***Result***
-```
+
+```console
 [1] 1 2 3 4 5
 ```
 ### **Element access**
 
-***Code***
+***Code & Result***
 ```
 vector1[3]	
 ```
-***Result***
-```
+
+```console
 [1] 3
 ```
 
-***Code***
+***Code & Result***
 ```
 vector1[-3]	
 ```
-***Result***
-```
+
+```console
 [1] 1 2 4 5
 ```
 
-***Code***
+***Code & Result***
 ```
 vector1[c(1, 3, 5)]	
 ```
-***Result***
-```
+
+```console
 [1] 1 3 5
 ```
 
-***Code***
+***Code & Result***
 ```
 vector1[c(TRUE, TRUE, FALSE, TRUE, TRUE)]	
 ```
-***Result***
-```
+
+```console
 [1] 1 2 4 5
 ```
 
-***Code***
+***Code & Result***
 ```
 vector1[c(TRUE, FALSE, TRUE)]	
 ```
-***Result***
-```
+
+```console
 [1] 1 3 4
 ```
 
@@ -76,7 +76,7 @@ vector1[c(TRUE, FALSE, TRUE)]
 
 ### **Declaration**
 
-***Code***
+***Code & Result***
 ```
 list1 <- list(
   a = c(1, 2, 3),
@@ -84,8 +84,8 @@ list1 <- list(
   c = c(TRUE, FALSE)
 )
 ```
-***Result***
-```
+
+```console
 $a
 [1] 1 2 3
 
@@ -97,20 +97,20 @@ $c
 ```
 ### **Element access**
 
-***Code***
+***Code & Result***
 ```
 list1$a	
 ```
-***Result***
-```
+
+```console
 [1] 1 2 3
 ```
-***Code***
+***Code & Result***
 ```
 list1[[2]]	
 ```
-***Result***
-```
+
+```console
 [1] "Apple" "Orange"
 ```
 
@@ -120,23 +120,23 @@ list1[[2]]
 
 ### **Declaration**
 
-***Code***
+***Code & Result***
 ```
 factor1 <- factor(c("A", "A", "B", "A"))
 ```
-***Result***
-```
+
+```console
 [1] A A B A
 Levels: A B
 ```
 ### **Element access**
 
-***Code***
+***Code & Result***
 ```
 factor1[3]	
 ```
-***Result***
-```
+
+```console
 [1] B
 Levels: A B
 ```
@@ -147,13 +147,13 @@ Levels: A B
 
 ### **Declaration**
 
-***Code***
+***Code & Result***
 ```
 matrix1 <- matrix(data = 1:12,
                   nrow = 3)
 ```
-***Result***
-```
+
+```console
      [,1] [,2] [,3] [,4]
 [1,]    1    4    7   10
 [2,]    2    5    8   11
@@ -162,39 +162,39 @@ matrix1 <- matrix(data = 1:12,
 
 ### **Element access**
 
-***Code***
+***Code & Result***
 ```
 matrix1[1, 2]
 ```
-***Result***
-```
+
+```console
 [1] 4
 ```
 
-***Code***
+***Code & Result***
 ```
 matrix1[1,]
 ```
-***Result***
-```
+
+```console
 [1]  1  4  7 10
 ```
 
-***Code***
+***Code & Result***
 ```
 matrix1[,2]
 ```
-***Result***
-```
+
+```console
 [1] 4 5 6
 ```
 
-***Code***
+***Code & Result***
 ```
 matrix1[c(1, 3), c(1, 4)]
 ```
-***Result***
-```
+
+```console
      [,1] [,2]
 [1,]    1   10
 [2,]    3   12
@@ -206,14 +206,14 @@ matrix1[c(1, 3), c(1, 4)]
 
 ### **Declaration**
 
-***Code***
+***Code & Result***
 ```
 data1 <- data.frame(Column1 = c(1, 2, 3),
                     Column2 = c(4, 5, 6),
-                    row.names = c("Row1", "Row2", "Row3")
+                    row.names = c("Row1", "Row2", "Row3"))
 ```
-***Result***
-```
+
+```console
      Column1 Column2
 Row1       1       4
 Row2       2       5
@@ -222,40 +222,40 @@ Row3       3       6
 
 ### **Element access**
 
-***Code***
+***Code & Result***
 ```
 data1[1, 2]
 ```
-***Result***
-```
+
+```console
 [1] 4
 ```
 
-***Code***
+***Code & Result***
 ```
 data1[2,]
 ```
-***Result***
-```
+
+```console
      Column1 Column2
 Row2       2       5
 ```
 
-***Code***
+***Code & Result***
 ```
 data1[,2]
 ```
-***Result***
-```
+
+```console
 [1] 4 5 6
 ```
 
-***Code***
+***Code & Result***
 ```
 data1[2:3, 1:2]
 ```
-***Result***
-```
+
+```console
      Column1 Column2
 Row2       2       5
 Row3       3       6
