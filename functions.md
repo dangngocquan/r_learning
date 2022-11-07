@@ -28,7 +28,7 @@
 
 ### **Create two matrices**
 
-***Code***
+***Code & Result***
 ```
 A <- matrix(data = 1:2,
             nrow = 1)
@@ -40,8 +40,8 @@ C <- matrix(data = 1:4,
             nrow = 2)
 ```
 
-***Result***
-```
+
+```console
 > A
      [,1] [,2]
 [1,]    1    2
@@ -59,26 +59,26 @@ C <- matrix(data = 1:4,
 
 ### **Example for `%*%` function**
 
-***Code***
+***Code & Result***
 ```
 A %*% B
 ```
 
-***Result***
-```
+
+```console
      [,1] [,2] [,3]
 [1,]   11   17   23
 ```
 
 ### **Example for `t()` function**
 
-***Code***
+***Code & Result***
 ```
 t(B)
 ```
 
-***Result***
-```
+
+```console
      [,1] [,2]
 [1,]    3    4
 [2,]    5    6
@@ -87,25 +87,25 @@ t(B)
 
 ### **Example for `det()` function**
 
-***Code***
+***Code & Result***
 ```
 det(C)
 ```
 
-***Result***
-```
+
+```console
 [1] -2
 ```
 
 ### **Example for `solve()` function**
 
-***Code***
+***Code & Result***
 ```
 solve(C)
 ```
 
-***Result***
-```
+
+```console
      [,1] [,2]
 [1,]   -2  1.5
 [2,]    1 -0.5
@@ -150,133 +150,133 @@ solve(C)
 
 ### **Example for `sum()` function**
 
-***Code***
+***Code & Result***
 ```
 sum(1, 2, 3)
 ```
 
-***Result***
-```
+
+```console
 [1] 6
 ```
 
-***Code***
+***Code & Result***
 ```
 sum(1:10)
 ```
 
-***Result***
-```
+
+```console
 [1] 55
 ```
 
 ### **Example for `prod()` function**
 
-***Code***
+***Code & Result***
 ```
 prod(1, 4, 5)
 ```
 
-***Result***
-```
+
+```console
 [1] 20
 ```
 
 ### **Example for `length()` function**
 
-***Code***
+***Code & Result***
 ```
 length(c(1, 2, 3, 5))
 ```
 
-***Result***
-```
+
+```console
 [1] 4
 ```
 
 ### **Example for `sort()` function**
 
-***Code***
+***Code & Result***
 ```
 sort(c(1, 5, 4, 2))
 ```
 
-***Result***
-```
+
+```console
 [1] 1 2 4 5
 ```
 
-***Code***
+***Code & Result***
 ```
 sort(c(1, 5, 4, 2),
      decreasing = TRUE)
 ```
 
-***Result***
-```
+
+```console
 [1] 5 4 2 1
 ```
 
 ### **Example for `seq()` function**
 
-***Code***
+***Code & Result***
 ```
 seq(from = 1, to = 5)
 ```
 
-***Result***
-```
+
+```console
 [1] 1 2 3 4 5
 ```
 
-***Code***
+***Code & Result***
 ```
 seq(from = 1, to = 5, by = 0.5)
 ```
 
-***Result***
-```
+
+```console
 [1] 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0
 ```
 
-***Code***
+***Code & Result***
 ```
 seq(from = 1, to = 5, length.out = 6)
 ```
 
-***Result***
-```
+
+```console
 [1] 1.0 1.8 2.6 3.4 4.2 5.0
 ```
 
 ### **Example for `rep()` function**
 
-***Code***
+***Code & Result***
 ```
 rep(1:3, times = 2)
 ```
 
-***Result***
-```
+
+```console
 [1] 1 2 3 1 2 3
 ```
 
-***Code***
+***Code & Result***
 ```
 rep(1:3, times = c(1, 2, 3))
 ```
 
-***Result***
-```
+
+```console
 [1] 1 2 2 3 3 3
 ```
 
-***Code***
+***Code & Result***
 ```
 rep(1:3, each = 2)
 ```
 
-***Result***
-```
+
+```console
 [1] 1 1 2 2 3 3
 ```
