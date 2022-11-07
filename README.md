@@ -5,3 +5,4 @@
 3. ***[Data types in R](source/md/data_types.md)***
 4. ***[Data structures in R](source/md/data_structures.md)***
 5. ***[Functions in R](source/md/functions.md)***
+6. ***[Data manipulations in R](source/md/data_manipulations.md)***

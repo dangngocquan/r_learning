@@ -52,5 +52,32 @@ data
 data_subset01 <- subset(data, data$Grade > 3 & data$Gender02 != 'Male')
 data_subset01
 
-data_subset01 <- data[data$Grade > 3]
+data_subset01 <- data[data$Grade > 3 & data$Gender02 != 'Male',]
 data_subset01
+
+
+table01 <- data.frame(col1 = sample(1:3, size = 5, replace = TRUE),
+                      col2 = sample(1:3, size = 5, replace = TRUE),
+                      col3 = sample(1:3, size = 5, replace = TRUE))
+table02 <- data.frame(col1 = sample(1:3, size = 5, replace = TRUE),
+                      col2 = sample(1:3, size = 5, replace = TRUE),
+                      col3 = sample(1:3, size = 5, replace = TRUE))
+
+table03 <- merge(table01, table02, by.x = 'col1', by.y = 'col1', sort = FALSE)
+table03
+
+data_test03 <- data.frame(col1 = c(1, 2, NA, 4, 5, 6),
+                         col2 = c(1, NA, 3, NA, 5, 6),
+                         col3 = c(1, 2, 3, 4, NA, 6))
+data_test03
+
+colSums(is.na(data_test03))
+
+data_test04 <- na.omit(data_test03)
+data_test04
+
+data_test03$col1[is.na(data_test03$col1)]
+data_test03$col1[is.na(data_test03$col1)] <- mean(data_test03$col1, na.rm = TRUE)
+data_test03$col2[is.na(data_test03$col2)] <- mean(data_test03$col2, na.rm = TRUE)
+data_test03$col3[is.na(data_test03$col3)] <- mean(data_test03$col3, na.rm = TRUE)
+data_test03
